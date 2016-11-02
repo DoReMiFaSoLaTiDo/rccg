@@ -1,0 +1,6 @@
+asset "angular"
+asset 'angular-resource'
+asset 'angular-route'
+asset 'angular-ui-router'
+asset "bootstrap"
+asset "angular-mocks"

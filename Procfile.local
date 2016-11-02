@@ -1,0 +1,2 @@
+postgresql: postgres -D vendor/postgresql
+rails: bundle exec rails s
