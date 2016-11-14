@@ -12,5 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
+// require angular/angular
+// require angular-resource/angular-resource
+// require angular-route/angular-route
+// require angular-ui-router
+//= require lodash/lodash
+//= require cloudinary-core/cloudinary-core
+//= require cloudinary_js/js/jquery.cloudinary.js
+// require angular-rails-templates
 //= require_tree .
+// require_tree ../templates

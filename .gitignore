@@ -13,3 +13,4 @@
 /tmp
 /vendor/postgresql
 .env
+/config/cloudinary.yml

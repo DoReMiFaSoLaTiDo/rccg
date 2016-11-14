@@ -1,0 +1,30 @@
+.site-header h1, .parallax h1, .page-image h1, .carousel-inner h1 {
+  font-family: 'Ubuntu', sans-serif;
+    margin-top:15%;
+    font: #ffffff;
+    background-color: rgba(0,0,0,0);
+    
+}
+
+/*
+#header {
+    background-color: black;
+    font: #fff;
+}
+*/
+
+.page-image {color: #ffffff;}
+
+p {
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+
+#logo {
+    margin-top: 2%;
+}
+
+.starter {
+    font-size: 20px;
+    font-weight: 'bold';
+}

@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rccg</title>
+  <title><%= yield(:page_title) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= google_webfonts_init({
+    google: ['Roboto Slab', 'Roboto', 'Wellfleet', 'Ubuntu', 'Oswald', 'Lato', 'Shrikhand', 'Raleway', 'Goudy+Bookletter+1911', 'Arvo:400,700,400italic,700italic']
+  }) %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<%= meta_description %>" >
+  <meta name="author" content="<%= meta_author %>" >
+  <meta name="keywords" content="<%= meta_keywords %>" >
+
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app="myApplication">
+
+
+<%= render 'application/favicon' %>
+<%= render "shared/navigation" %>
 
 <%= yield %>
 
+<%= render "shared/footer" %>
+
+<script type="text/javascript">$.cloudinary.responsive()</script>
 </body>
 </html>

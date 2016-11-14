@@ -1,0 +1,13 @@
+{
+  "name": "dsl-generated-dependencies",
+  "dependencies": {
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-route": "latest",
+    "angular-ui-router": "latest",
+    "bootstrap": "latest",
+    "angular-mocks": "latest",
+    "cloudinary_ng": "latest",
+    "cloudinary_js": "latest"
+  }
+}

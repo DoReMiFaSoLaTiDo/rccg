@@ -1,0 +1,149 @@
+body{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+ }
+
+ .dif-font {
+  font-family: 'Shrikhand', sans-serif!important;
+  /* font-weight: 400; */
+}
+
+ h1 {
+   font-family:"Arvo";
+   font-weight:normal;
+   font-size: 55px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+ }
+ h2 {
+   font-family:"Arvo";
+   font-weight: normal;
+   font-size: 40px;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+ }
+ h3 {
+   font-family: Oswald;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   margin: 5px 0;
+   padding: 0;
+   z-index: 1;
+   position: relative;
+ }
+
+ .center { margin: 0 auto; }
+ .content{ margin: 0 auto; width: 960px; }
+ .clear { clear: both; }
+
+ #header {
+  width: 100%;
+  background: url('../img/header-bg.png');
+  height: 80px;
+  position: fixed;
+  margin-top: 30px;
+}
+#nav { width: 410px; float: right; margin-top: 20px; }
+#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#nav ul{
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  list-style: none;
+}
+#nav li{
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
+}
+#nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+#nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1; }
+
+.quotes {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+ .author_name_white { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; }
+ .author_name_gray { font-family:"Wellfleet"; margin: 10px 0 0 20px; color: #94a4a4; font-size: 15px; }
+ .quotes_container { width: 800px; margin: 0 auto; }
+#christmas_tree { background: url('http://res.cloudinary.com/crmik/image/upload/v1479009576/christmas-tree_c4wdm5.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
+#divider { background: url('http://res.cloudinary.com/crmik/image/upload/v1479009582/divider_hwfcp6.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+#ribbon { background: url('http://res.cloudinary.com/crmik/image/upload/v1479009599/ribbon_bdfu4j.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
+#snowflakes1 { background: url('http://res.cloudinary.com/crmik/image/upload/v1479009605/snowflakes_sjnwid.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
+#snowflakes2 { background: url('http://res.cloudinary.com/crmik/image/upload/v1479009605/snowflakes_sjnwid.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; }
+
+#slide1, #slide2, #slide5{ width: 100%; }
+#slide1{
+  background: url('http://res.cloudinary.com/crmik/image/upload/c_scale,h_618,w_1113/v1478916598/overcome_kfztqo.jpg' )50% 0 no-repeat fixed;
+  color: #fff;
+  height: 600px; /*http://res.cloudinary.com/crmik/image/upload/c_scale,w_2057/v1478916598/overcome_kfztqo.jpg*/
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover;
+}
+#slide2{
+  background-color: #fff;
+  color: #333333;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0;
+}
+#slide3{
+  background: url('http://res.cloudinary.com/crmik/image/upload/v1477933791/worship_bfuinz.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  padding: 170px 0 0 0;
+  background-size: cover;
+}
+#slide4{
+  background-color: #fff;
+  color: #333333;
+  height: 300px;
+  padding: 50px 0;
+}
+#slide5{
+  background: url('http://res.cloudinary.com/crmik/image/upload/c_scale,w_960/v1479009215/slide1_copy_sjmfqb.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  margin: 0;
+  padding: 100px 0 260px 0;
+  background-size: cover;
+
+  /*height: 200px;
+  margin: 0 auto;
+  padding: 250px 0;
+  color: #fff;
+  background-size: cover; */
+}
+
+.section {
+  width: 540px;
+  height: 500px;
+  background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;
+}
+.section .inner {
+  width: 540px;
+  height: 500px;
+  background: url(../img/slide3.jpg) 50% 0 no-repeat fixed; }
+
+  .pict .img-responsive {
+      margin: 0 auto;
+  }
+
+body:after {
+  content: ' ';
+  display: block;
+  height: 20px;
+}

@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: rccg_development
+  database: rccg_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: rccg_production
+  database: rccg_prod
   username: rccg
   password: <%= ENV['RCCG_DATABASE_PASSWORD'] %>

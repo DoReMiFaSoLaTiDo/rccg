@@ -4,3 +4,5 @@ asset 'angular-route'
 asset 'angular-ui-router'
 asset "bootstrap"
 asset "angular-mocks"
+asset "cloudinary_ng"
+asset 'cloudinary_js'
