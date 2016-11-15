@@ -7,13 +7,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <%= link_to cl_image_tag("rccg_dark_back_logo_olov3e.png", :radius=>20, :width=>43, :crop=>"fill"), site_url, :class => "navbar-left" %> &nbsp;
         <%= link_to site_name, site_url, :class => "navbar-brand" %>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav pull-right">
           <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
           <li class="<%= 'active' if current_page?('/about') %>"><%= link_to "About", about_page_path %></li>
-          <li class="<%= 'active' if current_page?('/contact') %>"><%= link_to "Contact", '/contact' %></li>
+          <li class="<%= 'active' if current_page?('/ministries') %>"><%= link_to "Ministries", '/ministries' %></li>
         </ul>
       </div><!-- /.nav-collapse -->
     </div><!-- /.container -->

@@ -5,8 +5,13 @@ body{
  }
 
  .dif-font {
-  font-family: 'Shrikhand', sans-serif!important;
-  /* font-weight: 400; */
+  font-family: 'Merriweather', sans-serif!important;
+  font-weight: 400;
+  color: darkgoldenrod;
+}
+
+.roh{
+  font-family: 'Fredericka the Great', sans-serif!important;
 }
 
  h1 {
@@ -14,7 +19,7 @@ body{
    font-weight:normal;
    font-size: 55px;
    text-align: center;
-   color: #fff;
+   color: darkgoldenrod;
    margin: 0;
    padding: 0;
  }
@@ -85,7 +90,8 @@ body{
 
 #slide1, #slide2, #slide5{ width: 100%; }
 #slide1{
-  background: url('http://res.cloudinary.com/crmik/image/upload/c_scale,h_618,w_1113/v1478916598/overcome_kfztqo.jpg' )50% 0 no-repeat fixed;
+  background: /*url('http://res.cloudinary.com/crmik/image/upload/c_scale,h_618,w_1113/v1478916598/overcome_kfztqo.jpg' )50% 0 no-repeat fixed;*/
+  url('http://res.cloudinary.com/crmik/image/upload/v1479235741/Flecks_of_Gold_o6raxc.jpg') 50% 0 no-repeat fixed;
   color: #fff;
   height: 600px; /*http://res.cloudinary.com/crmik/image/upload/c_scale,w_2057/v1478916598/overcome_kfztqo.jpg*/
   margin: 0;

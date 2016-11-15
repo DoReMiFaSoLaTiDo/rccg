@@ -4,8 +4,12 @@ module ApplicationHelper
 
   end
 
+#  def site_logo
+#     <%= cl_image_tag("rccg_dark_back_logo_olov3e.png", :width=>20, :crop=>"scale") %>
+#  end
+    
   def site_name
-    "RCCG Overcomers House"
+    "Overcomers House"
   end
 
   def site_url
