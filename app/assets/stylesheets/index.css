@@ -12,6 +12,7 @@ body{
 
 .roh{
   font-family: 'Fredericka the Great', sans-serif!important;
+  text-shadow: 2px 0 0 darkgoldenrod, -2px 0 0 darkgoldenrod, 0 2px 0 darkgoldenrod, 0 -2px 0 darkgoldenrod, 1px 1px darkgoldenrod, -1px -1px 0 darkgoldenrod, 1px -1px 0 darkgoldenrod, -1px 1px 0 darkgoldenrod;
 }
 
  h1 {
@@ -90,10 +91,10 @@ body{
 
 #slide1, #slide2, #slide5{ width: 100%; }
 #slide1{
-  background: /*url('http://res.cloudinary.com/crmik/image/upload/c_scale,h_618,w_1113/v1478916598/overcome_kfztqo.jpg' )50% 0 no-repeat fixed;*/
-  url('http://res.cloudinary.com/crmik/image/upload/v1479235741/Flecks_of_Gold_o6raxc.jpg') 50% 0 no-repeat fixed;
+  background: 
+  url('http://res.cloudinary.com/crmik/image/upload/v1479618957/torquay_l17pye.jpg' /*http://res.cloudinary.com/crmik/image/upload/c_imagga_crop/v1479615800/home_page_ddvcvn.jpg'*/) 50% 0 no-repeat fixed;
   color: #fff;
-  height: 600px; /*http://res.cloudinary.com/crmik/image/upload/c_scale,w_2057/v1478916598/overcome_kfztqo.jpg*/
+  height: 600px; 
   margin: 0;
   padding: 200px 0 260px 0;
   background-size: cover;
