@@ -15,6 +15,11 @@
           <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
           <li class="<%= 'active' if current_page?('/about') %>"><%= link_to "About", about_page_path %></li>
           <li class="<%= 'active' if current_page?('/ministries') %>"><%= link_to "Ministries", '/ministries' %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+            <li class="<%= 'active' if current_page?('/login') %>"><%= link_to "Login", new_user_session_path %></li>
+          <% end %>
         </ul>
       </div><!-- /.nav-collapse -->
     </div><!-- /.container -->

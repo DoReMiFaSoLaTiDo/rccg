@@ -34,6 +34,7 @@ gem 'angular-rails-templates'
 gem 'unicorn'
 gem 'foreman'
 
+gem 'devise'
 # for static_pages
 # gem 'high_voltage'
 
