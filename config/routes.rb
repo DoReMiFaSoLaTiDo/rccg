@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :events
+  resources :venues
   devise_for :users
   scope '/admin' do
     resources :users
@@ -27,7 +29,7 @@ Rails.application.routes.draw do
     get "/#{action}", to: "pages##{action}", as: "#{action}_page"
   end
 
-  get '/messages/pastor', to: ':messages/:new/message[office_name]=pastor', as: 'pastor_message' #, via: [:get]
+  # get '/messages/pastor', to: ':messages/:new/message[office_name]=pastor', as: 'pastor_message' #, via: [:get]
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

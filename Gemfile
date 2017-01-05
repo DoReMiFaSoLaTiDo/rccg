@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -76,4 +76,4 @@ end
 
 gem 'rails_12factor', group: :production
 
-ruby "2.2.1"
+ruby "2.3.3"

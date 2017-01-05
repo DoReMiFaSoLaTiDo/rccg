@@ -4,6 +4,9 @@ class PagesController < ApplicationController
 #  end
 
   def index
+    @ongoings = Event.where((:start_date..:end_date).invclude?(Date.now))
+    @upcomings = Event.upcoming
+    @meetings = Event.meeting
     # render
   end
 
@@ -12,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def ministries
-    # render 
+    # render
   end
 
 end
