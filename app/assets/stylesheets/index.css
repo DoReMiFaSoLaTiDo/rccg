@@ -91,10 +91,10 @@ body{
 
 #slide1, #slide2, #slide5{ width: 100%; }
 #slide1{
-  background: 
-  url('http://res.cloudinary.com/crmik/image/upload/v1479618957/torquay_l17pye.jpg' /*http://res.cloudinary.com/crmik/image/upload/c_imagga_crop/v1479615800/home_page_ddvcvn.jpg'*/) 50% 0 no-repeat fixed;
+  background:
+  url('http://res.cloudinary.com/crmik/image/upload/v1483937924/white_rainbow_bk63cz.png') 50% 0 no-repeat fixed;
   color: #fff;
-  height: 600px; 
+  height: 600px;
   margin: 0;
   padding: 200px 0 260px 0;
   background-size: cover;
@@ -133,6 +133,24 @@ body{
   padding: 250px 0;
   color: #fff;
   background-size: cover; */
+}
+
+#slide5 .table {
+    display: table;
+}
+#slide5 .row {
+    display: table-row;
+}
+#slide5 .cell {
+    display: table-cell;
+    padding: 10px;
+}
+
+#slide5 .row:hover {
+    background-color: #cccccc;
+}
+#slide5 .cell:hover {
+    background-color: #e5e5e5;
 }
 
 .section {

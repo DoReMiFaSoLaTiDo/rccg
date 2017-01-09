@@ -4,9 +4,11 @@ class PagesController < ApplicationController
 #  end
 
   def index
-    @ongoings = Event.where((:start_date..:end_date).invclude?(Date.now))
-    @upcomings = Event.upcoming
-    @meetings = Event.meeting
+    @ongoings = Event.where((:start_date..:end_date).include?(Date.current))
+    @upcomings = Event.upcoming(5)
+    @meetings = Event.meeting(5)
+
+    # raise @upcomings.inspect
     # render
   end
 

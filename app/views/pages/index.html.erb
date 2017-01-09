@@ -92,7 +92,39 @@
 
 <div class="row">
  <div id="slide5">
-   <div class="content col-lg-12 col-md-12 hidden-sm hidden-xs">
+   <div class="content col-lg-4 col-md-4 hidden-sm hidden-xs">
+     <h3>Upcoming Events</h3>
+     <table class="table">
+       <% @upcomings.each do |up| -%>
+        <tr>
+          <td><%= uk_date_time(up.start_date) %></td>
+          <td><%= link_to up.name, event_path(up) %></td>
+          <!-- <a class="row" href="<% %>">  -->
+            <!-- <div class="cell"></div>
+            <div class="cell"></div>
+          </a> -->
+        <% end %>
+      </tr>
+    </table>
+    </div>
+    <div class="content col-lg-4 col-md-4 hidden-sm hidden-xs">
+      <h3>Meetings</h3>
+      <table class="table">
+        <% if @meetings.to_a.any? %>
+          <% @meetings.each do |mt| -%>
+             <tr class='clickable-row'>
+               <td><%= uk_date_time(mt.start_date) %></td>
+               <td><%= mt.name %></td>
+             </tr>
+           <% end %>
+        <% else %>
+          <tr>
+            <td colspan="2">No meetings scheduled</td>
+          </tr>
+        <% end %>
+      </table>
+     </div>
+   <!--
      <div id="christmas_tree"> </div>
      <div id="snowflakes1"></div>
      <div id="snowflakes2"></div>
@@ -102,7 +134,7 @@
      <h3>HAPPY NEW YEAR </h3>
      <div id="ribbon"></div>
      <div id="new_year"> </div>
-   </div>
+    -->
  </div>
 </div>
 
