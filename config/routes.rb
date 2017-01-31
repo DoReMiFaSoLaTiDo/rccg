@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "messages/new" => 'message#new', :as => :new_mail
   resources :events
   resources :venues
   devise_for :users

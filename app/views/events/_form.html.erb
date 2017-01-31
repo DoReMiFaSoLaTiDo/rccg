@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label "Event Name", :name %>
     <%= f.text_field :name %>
   </div>
   <div class="field">
@@ -21,8 +21,9 @@
   </div>
   <div class="field">
     <%= f.label :event_type %><br>
-    <%= f.number_field :event_type %>
+    <%= f.select :event_type, Event.event_types.keys, prompt: 'Select Event Type' %>
   </div>
+
   <div class="field">
     <%= f.label :start_date %><br>
     <%= f.datetime_select :start_date %>
@@ -32,12 +33,12 @@
     <%= f.datetime_select :end_date %>
   </div>
   <div class="field">
-    <%= f.label :minister %><br>
+    <%= f.label "Ministering", :minister %>
     <%= f.text_field :minister %>
   </div>
   <div class="field">
-    <%= f.label :venue_id %><br>
-    <%= f.text_field :venue_id %>
+    <%= f.label :venue_id %>
+    <%= collection_select(:event, :venue_id, Venue.all, :id, :name, prompt: "Please select event venue") %>
   </div>
   <div class="actions">
     <%= f.submit %>

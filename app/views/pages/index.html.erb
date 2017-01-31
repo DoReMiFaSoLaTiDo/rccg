@@ -68,7 +68,7 @@
              <p>Torquay Boys' Grammar School<br>
                Shiphay Manor Drive, <br>
                Torquay, TQ2 7EL</p>
-             <li><%= link_to 'The Pastor', new_message_path %> <span class="glyphicon glyphicon-envelope"></span></li>
+             <li><%= link_to 'The Pastor', new_message_path,  :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window' %> <span class="glyphicon glyphicon-envelope"></span></li>
              <li>Share Testimony <span class="glyphicon glyphicon-pencil"></span></li>
              <li>Prayer Request <span class="glyphicon glyphicon-send"></span></li>
             </ul>
@@ -95,16 +95,20 @@
    <div class="content col-lg-4 col-md-4 hidden-sm hidden-xs">
      <h3>Upcoming Events</h3>
      <table class="table">
-       <% @upcomings.each do |up| -%>
-        <tr>
-          <td><%= uk_date_time(up.start_date) %></td>
-          <td><%= link_to up.name, event_path(up) %></td>
+       <% if @upcomings.to_a.any? %>
+        <% @upcomings.each do |up| -%>
+          <tr>
+            <td><%= uk_date_time(up.start_date) %></td>
+            <td><%= link_to up.name, event_path(up) %></td>
           <!-- <a class="row" href="<% %>">  -->
             <!-- <div class="cell"></div>
             <div class="cell"></div>
           </a> -->
+          </tr>
         <% end %>
-      </tr>
+      <% else %>
+        <td colspan="2" style="padding: 10px">Please check regular church programs</td>
+      <% end %>
     </table>
     </div>
     <div class="content col-lg-4 col-md-4 hidden-sm hidden-xs">
@@ -116,10 +120,10 @@
                <td><%= uk_date_time(mt.start_date) %></td>
                <td><%= mt.name %></td>
              </tr>
-           <% end %>
+             <% end %>
         <% else %>
           <tr>
-            <td colspan="2">No meetings scheduled</td>
+            <td colspan="2" style="padding: 10px">No meetings scheduled</td>
           </tr>
         <% end %>
       </table>
@@ -137,7 +141,7 @@
     -->
  </div>
 </div>
-
+<div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
  <!----- SLIDES END --->
 
  <!-- <div class="section">

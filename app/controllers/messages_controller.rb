@@ -1,11 +1,16 @@
 class MessagesController < ApplicationController
 
-  before_action :authenticate_user!, :except => [:new, :create]
+  before_action :authenticate_user!, :except => [:new, :create, :destroy]
 
   def new
     @message = Message.new.tap do |msg|
       msg.office=(receiver)
     end
+    respond_to do |format|
+      format.html
+      format.js
+    end
+
   end
 
   def create

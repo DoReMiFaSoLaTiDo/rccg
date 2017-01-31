@@ -32,7 +32,7 @@
 
 <p>
   <strong>Venue:</strong>
-  <%= @event.venue %>
+  <%= @event.venue.name %> | <%= @event.venue.address %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

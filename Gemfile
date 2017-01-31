@@ -35,6 +35,7 @@ gem 'unicorn'
 gem 'foreman'
 
 gem 'devise'
+gem 'cancancan'
 # for static_pages
 # gem 'high_voltage'
 
