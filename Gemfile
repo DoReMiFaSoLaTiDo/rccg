@@ -36,6 +36,9 @@ gem 'foreman'
 
 gem 'devise'
 gem 'cancancan'
+
+gem 'ckeditor'
+# gem "paperclip"
 # for static_pages
 # gem 'high_voltage'
 

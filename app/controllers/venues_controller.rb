@@ -16,6 +16,10 @@ class VenuesController < ApplicationController
   # GET /venues/new
   def new
     @venue = Venue.new
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /venues/1/edit

@@ -5,6 +5,7 @@ class MessagesController < ApplicationController
   def new
     @message = Message.new.tap do |msg|
       msg.office=(receiver)
+      msg.message_type = params[:message_type].to_i
     end
     respond_to do |format|
       format.html
@@ -23,8 +24,8 @@ class MessagesController < ApplicationController
     end
 
     def receiver
-      #raise params.require(:message)[:office_name]
-      off = Office.ci_find('name', params.require(:message)[:office_name])
-      #raise off.inspect
+      # raise params.inspect
+      off = Office.ci_find('name', params[:office_name])
+      # raise off.inspect
     end
 end

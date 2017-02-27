@@ -1,10 +1,23 @@
 Rails.application.routes.draw do
-  get "messages/new" => 'message#new', :as => :new_mail
+  # namespace :admin do
+  # get 'dashboard/index'
+  # end
+
+  get "events/new" => 'events#new', as: 'new_prog'
+  get "venues/new" => 'venues#new', as: 'define_new_venue'
+  get "messages/new" => 'messages#new', as: 'new_mail'
+
+  get "messages/*office_name/*message_type" => "messages#new", as: 'named_mail'
+
   resources :events
   resources :venues
   devise_for :users
   scope '/admin' do
     resources :users
+  end
+
+  namespace :admin do
+    get '/admin', to: 'dashboard#index', as: 'admin_dashboard'
   end
 
   scope '/office' do
@@ -23,6 +36,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
 #  get "/*id" => 'pages#show' #, as: :page, format: false
 #  root to: 'pages#index', as '/'
+
 
  root "pages#index"
 

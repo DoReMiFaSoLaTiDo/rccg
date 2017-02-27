@@ -1,0 +1,7 @@
+<tr id="<%= event.id %>">
+  <td><%= event.name %></td>
+
+  <td>
+    <%= link_to "Edit", edit_event_path(event), remote: true %>
+  </td>
+</tr>

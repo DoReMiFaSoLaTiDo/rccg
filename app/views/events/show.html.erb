@@ -1,39 +1,48 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <div class="light-well">
+        <h2 class="page-header text-center">Events</h2>
+          <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
+          <p>
+            <strong>Name:</strong>
+            <%= @event.name %>
+          </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
+          <p>
+            <strong>Description:</strong>
+            <%= @event.description %>
+          </p>
 
-<p>
-  <strong>Event type:</strong>
-  <%= @event.event_type %>
-</p>
+          <p>
+            <strong>Event type:</strong>
+            <%= @event.event_type %>
+          </p>
 
-<p>
-  <strong>Start date:</strong>
-  <%= @event.start_date %>
-</p>
+          <p>
+            <strong>Start date:</strong>
+            <%= @event.start_date %>
+          </p>
 
-<p>
-  <strong>End date:</strong>
-  <%= @event.end_date %>
-</p>
+          <p>
+            <strong>End date:</strong>
+            <%= @event.end_date %>
+          </p>
 
-<p>
-  <strong>Minister:</strong>
-  <%= @event.minister %>
-</p>
+          <p>
+            <strong>Minister:</strong>
+            <%= @event.minister %>
+          </p>
 
-<p>
-  <strong>Venue:</strong>
-  <%= @event.venue.name %> | <%= @event.venue.address %>
-</p>
+          <p>
+            <strong>Venue:</strong>
+            <%= @event.venue.name %> | <%= @event.venue.address %>
+          </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+          <%= link_to 'Edit', edit_event_path(@event) %> |
+          <%= link_to 'Back', events_path %>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require bootstrap-sprockets
 //= require turbolinks
 // require angular/angular
@@ -22,5 +23,6 @@
 //= require cloudinary-core/cloudinary-core
 //= require cloudinary_js/js/jquery.cloudinary.js
 // require angular-rails-templates
+//= require ckeditor/init
 //= require_tree .
 // require_tree ../templates

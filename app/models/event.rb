@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-  enum event_types: {
+  enum event_type: {
     "Church Event"    =>  1,
     "Meeting"         =>  2,
     "Special Program" =>  3

@@ -1,3 +1,12 @@
 <%= content_for :page_title, 'RCCG Overcomers House | Torquay - Inquiry' %>
 
-<%= @message.inspect %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="light-well">
+        <h2 class="page-header text-center">New <%= @message.message_type %></h2>
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>

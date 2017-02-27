@@ -1,6 +1,15 @@
-<h1>Editing Event</h1>
+<%= content_for :page_title, 'RCCG Overcomers House | Torquay - Events' %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <div class="light-well">
+        <h2 class="page-header text-center">Editing Event</h2>
 
-<%= render 'form' %>
+        <%= render 'form' %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+        <%= link_to 'Show', @event %> |
+        <%= link_to 'Back', events_path %>
+      </div>
+    </div>
+  </div>
+</div>

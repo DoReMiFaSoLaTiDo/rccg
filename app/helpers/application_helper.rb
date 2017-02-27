@@ -41,4 +41,9 @@ module ApplicationHelper
     DateTime.parse(get_date.to_s).strftime("%a, %d %b %Y %I:%M %p")
   end
 
+  def uk_date(get_date)
+    DateTime.parse(get_date.to_s).strftime("%d %b %Y")
+  end
+
+
 end
