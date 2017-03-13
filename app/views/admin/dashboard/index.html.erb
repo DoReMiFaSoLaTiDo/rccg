@@ -1,6 +1,59 @@
-<h1>Administration</h1>
+<%= content_for :page_title, 'RCCG Overcomers House | Torquay - Dashboard' %>
+
+    <div class="row" style="background-color: black; font: #fff">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <span class="page-image"><h1>Dashboard</h1></span>
+        </div>
+    </div>
+    <div class="row-offcanvas row-offcanvas-left">
+      <div id="sidebar" class="sidebar-offcanvas">
+          <div class="col-md-12">
+            <br/>
+            <!-- <h3>Sidebar (fixed)</h3> -->
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><%= link_to 'Mail Messages', messages_path %></li>
+              <li><%= link_to 'Mail Messages', messages_path %></li>
+              <li><%= link_to 'Manage Events', events_path %></li>
+              <li><%= link_to 'Manage Venues', venues_path %></li>
+              <li><%= link_to 'Manage Users', users_path %></li>
+            </ul>
+          </div>
+      </div>
+      <div id="main">
+          <div class="col-md-12">
+          	  <p class="visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              <p id="notice"><%= notice %></p>
+              <h1>Welcome</h1>
+              <div class="row">
+                  <div class="col-md-12"><div class="well"><p>Shrink the browser width to make the sidebar collapse off canvase.</p></div></div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4"><div class="well"><p>4 cols</p></div></div>
+                  <div class="col-md-4"><div class="well"><p>4 cols</p></div></div>
+                  <div class="col-md-4"><div class="well"><p>4 cols</p></div></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6 col-sm-6"><div class="well"><p>6 cols, 6 small cols</p></div></div>
+                  <div class="col-lg-6 col-sm-6"><div class="well"><p>6 cols, 6 small cols</p></div></div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 col-sm-6"><div class="well">4 cols, 6 small cols</div></div>
+                  <div class="col-lg-4 col-sm-6"><div class="well">4 cols, 6 small cols</div></div>
+                  <div class="col-lg-4 col-sm-12"><div class="well">4 cols, 12 small cols</div></div>
+              </div>
+          </div>
+      </div>
+    </div><!--/row-offcanvas -->
+
+
+
+
 
 <ul>
-  <li><%= link_to 'Manage Users' %></li>
-  <li><%= link_to 'Manage Articles' %></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>

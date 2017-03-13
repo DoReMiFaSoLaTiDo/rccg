@@ -2,7 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe "Dashboard", type: :request do
-  describe "GET /admin" do
+  describe "GET /dashboard" do
 
     it "accesses the dashboard" do
       User.create(
@@ -17,7 +17,7 @@ RSpec.describe "Dashboard", type: :request do
       fill_in 'Password', with: 'secret007'
       click_button 'Log in'
 
-      raise current_path.inspect #should eq admin_dashboard_url
+      current_path.inspect should eq admin_path
       within 'h1' do
         page.should have_content 'Administration'
       end

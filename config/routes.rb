@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get "messages/*office_name/*message_type" => "messages#new", as: 'named_mail'
 
+  # get "admin/dashboard" => "dashboard#index", as: "dashboard"
+
   resources :events
   resources :venues
   devise_for :users
@@ -16,8 +18,9 @@ Rails.application.routes.draw do
     resources :users
   end
 
+
   namespace :admin do
-    get '/admin', to: 'dashboard#index', as: 'admin_dashboard'
+    get '/dashboard', to: "dashboard#index", as: '/'
   end
 
   scope '/office' do
