@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # namespace :admin do
   # get 'dashboard/index'
   # end
-
+  # mount Ckeditor::Engine => '/ckeditor'
   get "events/new" => 'events#new', as: 'new_prog'
   get "venues/new" => 'venues#new', as: 'define_new_venue'
   get "messages/new" => 'messages#new', as: 'new_mail'

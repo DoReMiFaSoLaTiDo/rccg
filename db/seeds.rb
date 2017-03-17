@@ -27,5 +27,5 @@ offices = Office.create([{name: 'Pastor', description: 'Church Leader'}, {name: 
 # w1 = Office.create({name: "worker", description: "Church Worker"})
 # u1 = User.create(first_name: "Tony", last_name: "Ajayi", email: "pastor@rccg.com", password: "pastor123", password_confirmation: "pastor123")
 # u2 = User.create(first_name: "Mary", last_name: "Olatunde", email: "worker1@rccg.com", password: "worker123", password_confirmation: "worker123")
-# u3 = User.create(first_name: "Kevin", last_name: "Brainard", email: "worker2@rccg.com", password: "worker223", password_confirmation: "worker223")
+# u3 = User.create(first_name: "Kevin", last_name: "Brainard", email: "KBrainard@rccg.com", password: "Worker223", password_confirmation: "worker223")
 # u4 = User.create(first_name: "Jack", last_name: "Wilson", email: "justme@example.com", password: "justme123", password_confirmation: "justme123")
