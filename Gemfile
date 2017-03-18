@@ -38,6 +38,7 @@ gem 'devise'
 gem 'cancancan'
 
 gem 'ckeditor'
+gem 'non-stupid-digest-assets'
 # gem "paperclip"
 # for static_pages
 # gem 'high_voltage'
